@@ -6,13 +6,13 @@ app = Flask(__name__)
 
 
 # Retrieve data from database
-def get_data() :
+def get_data():
     time = ""
     temp, hum = (0, 0)
     conn = sqlite3.connect('../sensors_data.db')
     curs = conn.cursor()
     for row in curs.execute("SELECT * FROM DHT_DATA ORDER BY timestamp DESC LIMIT 1"):
-        time = datetime.strptime(row[0], "%Y-%m-%d %H:%M:%S").strftime("%d.%m.%Y um %H:%M")
+        time = datetime.strptime(row[0], "%Y-%m-%d %H:%M:%S").strftime("%d.%m.%Y at %H:%M")
         temp = row[1]
         hum = row[2]
     conn.close()
