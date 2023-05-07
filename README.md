@@ -7,3 +7,8 @@ To run this script you have to run following command: `sudo python3 logDHT.py`
 
 ### `app.py`
 The 'webservice' contains a flask-webservice to fetch data from the sqlite database and represent the data. To run this script you have to run following command: `sudo python3 app.py`
+
+## TODO :
+- [ ] push-notification 
+- [ ] data-history-visualization
+- [ ] authentication & admin-page
