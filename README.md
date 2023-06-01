@@ -10,5 +10,5 @@ The 'webservice' contains a flask-webservice to fetch data from the sqlite datab
 
 ## TODO :
 - [ ] push-notification 
-- [ ] data-history-visualization
+- [X] data-history-visualization
 - [ ] authentication & admin-page
