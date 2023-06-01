@@ -17,7 +17,7 @@
 </nav>
 
 <!-- information-card -->
-<div class="card" style="margin:3em;">
+<div class="card" style="margin: 3em 7.9em;">
     <div class="card-body">
         <div class="row">
             <div class="col"><b>Temperature</b></div>
@@ -31,4 +31,25 @@
     </div>
     <div class="card-footer text-body-secondary" style="text-align: right;">{{ time }}</div>
 </div>
+
+<!-- plot-card -->
+<div class="container text-center" style="margin: 3em 7.9em;">
+    <div class="row">
+        <div class="col">
+            <!-- plot temperature card -->
+            <div class="card" style="">
+                <img src="/plot/temp" alt="Image Placeholder" class="card-img-top">
+                <h5 class="card-title">Temperature [°C]</h5>
+            </div>
+        </div>
+        <div class="col">
+            <!-- plot humidity card -->
+            <div class="card" style="">
+                <img src="/plot/hum" alt="Image Placeholder" class="card-img-top">
+                <h5 class="card-title">Humidity [%]</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
