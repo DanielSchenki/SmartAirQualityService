@@ -25,10 +25,10 @@ def get_last_data():
 def send_notification():
     time, temp, hum = get_last_data()
 
-    # create connection
+    # create connection to pushover api
     conn = http.client.HTTPSConnection("api.pushover.net:443")
 
-    # send notification
+    # send post request to pushover api
     conn.request("POST", "/1/messages.json",
                  urllib.parse.urlencode({
                      "token": "ag1hneaetxity8e76xnei21q77tvfp",
@@ -37,7 +37,7 @@ def send_notification():
                      "message": "Temperature: " + str(temp) + "°C, Humidity: " + str(hum) + "%",
                  }), {"Content-type": "application/x-www-form-urlencoded"})
 
-    # get response
+    # get response from pushover api
     conn.getresponse()
 
 
