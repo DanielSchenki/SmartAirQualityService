@@ -31,8 +31,8 @@ def send_notification():
     # send post request to pushover api
     conn.request("POST", "/1/messages.json",
                  urllib.parse.urlencode({
-                     "token": "ag1hneaetxity8e76xnei21q77tvfp",
-                     "user": "uz8z9ruvvxyuwh1v24h228r4ywffnn",
+                     "token": "_",
+                     "user": "_",
                      "title": "SmartAirQualityService",
                      "message": "Temperature: " + str(temp) + "°C, Humidity: " + str(hum) + "%",
                  }), {"Content-type": "application/x-www-form-urlencoded"})
